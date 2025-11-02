@@ -16,11 +16,11 @@ class InMemoryStorage:
         self.lock = threading.Lock()
         
     def get(self, key: str) -> List[float]:
-        with self._lock:
+        with self.lock:
             return self._data.get(key, []).copy()
         
     def set(self, key: str, timestamps: List[float]):
-        with self._lock:
+        with self.lock:
             self._data[key] = timestamps
         
     def cleanup(self, key: str, now: float, window: int) -> List[float]:

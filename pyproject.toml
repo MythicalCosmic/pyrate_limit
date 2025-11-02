@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrate-limit"
+version = "0.1.0"
+description = "Clean, reusable rate limiting decorator with pluggable storage"
+readme = "README.md"
+authors = [{name = "Abrorbek Qodirjonov", email = "mythicalcosmic7@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["ratelimit", "throttle", "decorator", "api"]
+
+[project.urls]
+Homepage = "https://github.com/MythicalCosmic/pyrate_limit"
+Repository = "https://github.com/MythicalCosmic/pyrate_limit"
+
+[tool.setuptools.packages.find]
+where = ["."]
