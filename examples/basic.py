@@ -1,4 +1,4 @@
-from pyrate_limit import ratelimit
+from limitless_py import ratelimit
 import time
 
 @ratelimit(calls=3, per=2)

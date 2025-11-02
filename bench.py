@@ -1,7 +1,7 @@
 import time
-from pyrate_limit import ratelimit
+from limitless_py import ratelimit
 
-# ---- pyrate-limit -------------------------------------------------
+# ---- limitless_py -------------------------------------------------
 @ratelimit(calls=100, per=1)
 def limited():
     pass
@@ -59,7 +59,7 @@ except Exception as e:
 if __name__ == "__main__":
     print("10,000 calls @ 100/sec limit")
     print("┌────────────────────┬──────────────┐")
-    print(f"│ {'pyrate-limit':18} │ {bench_pyratelimit():6.2f} s │")
+    print(f"│ {'limitless_py':18} │ {bench_pyratelimit():6.2f} s │")
     print(f"│ {'Manual sleep()':18} │ {bench_manual():6.2f} s │")
     t = bench_external()
     status = t if isinstance(t, str) else f"{t:6.2f} s"

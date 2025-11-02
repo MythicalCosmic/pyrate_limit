@@ -1,5 +1,5 @@
 import time
-from pyrate_limit import ratelimit, InMemoryStorage
+from limitless_py import ratelimit, InMemoryStorage
 
 def test_ratelimit_blocks():
     calls = []

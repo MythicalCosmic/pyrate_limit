@@ -1,3 +1,18 @@
+Metadata-Version: 2.4
+Name: limitless-py
+Version: 0.2.0
+Summary: Zero-dep rate limiter — faster than ratelimit, ironically named
+Author-email: Abrorbek Qodirjonov <mythicalcosmic7@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/MythicalCosmic/pyrate_limit
+Project-URL: Repository, https://github.com/MythicalCosmic/pyrate_limit
+Keywords: ratelimit,throttle,decorator,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
 # 🐍 limitless-py ⏱️  
 **Dead-simple, pluggable rate limiting for Python — with zero dependencies.**  
 Because *you’re not limited anymore.* 🚀  
